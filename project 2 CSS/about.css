@@ -1,0 +1,556 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+}
+
+/* Navigation */
+
+header {
+  background-image: url(/MEDIA/istockphoto-1046450922-612x612.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.head-nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: green;
+}
+
+.head-nav img {
+  width: 5rem;
+  height: 5rem;
+  padding-left: 5px;
+}
+
+.navigate {
+  display: flex;
+  /* margin-left: 30px; */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 165px;
+}
+
+.channel {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.channel a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: Arial;
+  border: none;
+  box-shadow: 0px 5px 10px black;
+  padding: 8px;
+  border-radius: 1px 30px;
+  transition: all 1s;
+}
+
+a:hover {
+  transform: translateY(5px);
+  transition: 1s;
+}
+
+#train {
+  font-size: 100%;
+  font-family: Arial;
+  font-weight: 20%;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  box-shadow: 1px 1px 30px blue;
+}
+
+#train:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0px 0px 20px white;
+}
+
+/* Styling for Main content */
+
+main {
+  display: flex;
+  background-color: rgb(245, 244, 244);
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  border: none;
+}
+
+main div {
+  width: 600px;
+  animation: fadeIn 1s;
+}
+aboutp:hover {
+  transform: scale(0.95);
+  transition: ease-in-out 1s;
+}
+
+div h1 {
+  font-family: Arial;
+  font-size: 45px;
+  text-shadow: 0px 0px 3px;
+}
+
+main img {
+  width: 35%;
+  border: none;
+  box-shadow: 0px 0px 20px green;
+  border-radius: 2px 200px;
+  animation: flipIn 2.5s;
+}
+main div p {
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-align: justify;
+  color: rgb(75, 64, 64);
+}
+
+# @keyframes flipIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateX(0d);
+  }
+}
+
+/* styl for why organic */
+
+.organic div {
+  padding: 10px;
+  margin: 5%;
+  text-align: justify;
+  width: 70%;
+}
+
+.organic #list {
+  font-size: 150%;
+  font-family: Arial;
+  font-style: oblique;
+  list-style-type: upper-alpha;
+}
+
+.organic p {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.organic li {
+  font-size: 115%;
+  font-family: Arial;
+  list-style: lower-roman;
+}
+
+.organic-farm {
+  /* display: flex; */
+  /* padding: 20px; */
+  justify-items: center;
+  margin: auto;
+  width: 1000px;
+}
+
+.organic-farm:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+#methodh2 {
+  font-size: 200%;
+  font-family: Arial;
+  text-align: center;
+}
+
+.organic-farm p {
+  font-size: 110%;
+  font-family: Arial;
+}
+
+.organic-farm ul li {
+  font-size: 100%;
+  font-family: Arial;
+}
+
+.organic-farm ol {
+  /* width: 800px; */
+  /* margin-left: vh; */
+  box-shadow: 0px 0px 10px green;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 3px;
+}
+
+/* style organic fish method */
+
+.organic-pond {
+  /* display: flex; */
+  justify-items: center;
+  margin: auto;
+  width: 1000px;
+  margin-top: 5%;
+}
+
+.organic-pond:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.organic-pond p {
+  font-size: 110%;
+  font-family: Arial;
+}
+
+.organic-pond ul li {
+  font-size: 100%;
+  font-family: Arial;
+}
+
+.organic-pond ol {
+  /* width: 800px; */
+  margin-left: 5vh;
+  box-shadow: 0px 0px 10px green;
+  border-radius: 20px;
+  padding-bottom: 25px;
+  padding-top: 5px;
+  /* padding-right: 10px; */
+}
+
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid;
+  box-shadow: 0px 0px 10px;
+  width: 900px;
+  margin: auto;
+  border-radius: 10px 100px;
+  /* justify-items: center; */
+}
+
+.benefit div {
+  padding: 5px;
+}
+
+.benefit h2 {
+  font-family: Arial;
+  font-size: 40px;
+  color: rgb(83, 49, 49);
+  text-shadow: 0px 0px 3px;
+}
+
+.benefit ul {
+  font-size: 120%;
+  margin-bottom: 10px;
+  font-family: Arial;
+}
+
+.benefit:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+.bsfimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.bsfimage img {
+  width: 650px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+#img2 {
+  height: 480px;
+}
+
+figcaption {
+  font-size: 13px;
+  font-family: Arial;
+  text-shadow: 0px 0px 1px;
+}
+
+#img2:hover {
+  transform: translateY(-10px);
+  transition: ease-in-out 0.5s;
+}
+
+#img1:hover {
+  transform: translateY(-10px);
+  transition: ease-in-out 0.5s;
+}
+
+.organic-bsf {
+  justify-items: center;
+  margin: auto;
+  width: 1000px;
+  margin-top: 5%;
+}
+
+aside {
+  background-color: rgb(242, 247, 245);
+  padding: 20px;
+  border: none;
+}
+
+.organic- p {
+  font-size: 110%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.organic-bsf ul li {
+  font-size: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.organic-bsf ol {
+  width: 1100px;
+  margin-left: 5vh;
+  box-shadow: 0px 0px 10px rgb(18, 54, 18);
+  border-radius: 20px;
+  padding-bottom: 25px;
+  padding-top: 5px;
+
+  padding-right: 20px;
+}
+
+#bsfimg2 {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+#bsfimg:hover {
+  transform: translateX(4%);
+  transition: ease-in-out 2s;
+}
+
+.bsfsite {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#siteimg2 {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+#siteimg1 {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+#siteimg1:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+#siteimg2:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.how-bsf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.how-bsf span {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.how-bsf h2 {
+  font-size: 35px;
+  text-shadow: 0px 0px 3px;
+  font-family: Arial;
+}
+
+.result {
+  text-align: justify;
+  margin: auto;
+  padding: 30px;
+  padding-left: 50px;
+  box-shadow: 0px 0px 10px;
+  border-radius: 10px;
+  width: 900px;
+}
+
+.hows:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+  text-shadow: 0px 0px 1px;
+}
+
+.result li {
+  font-size: 19px;
+  font-family: Arial;
+}
+
+#pose {
+  display: flex;
+  margin: auto;
+  width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgb(7, 1, 1);
+}
+
+section {
+  background-color: rgb(3, 68, 28);
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 0px 5px;
+}
+
+/* Styling for footer */
+
+footer {
+  background-color: rgb(11, 7, 47);
+  color: white;
+}
+
+.end-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 5%;
+  padding: 20px;
+}
+
+footer .about {
+  text-align: justify;
+}
+
+.about h4 {
+  font-size: 20px;
+  font-family: Arial;
+  text-shadow: 0px 0px 5px;
+}
+
+.about p {
+  color: rgb(224, 194, 194);
+  font-family: Arial;
+}
+
+#copy {
+  text-align: center;
+}
+
+.social-links a {
+  font-size: 25px;
+  text-decoration: none;
+  /* color: white; */
+  opacity: 10;
+}
+
+.social-links i:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+}
+
+.fa-facebook-f {
+  color: rgb(5, 5, 243);
+}
+
+.fa-instagram {
+  color: rgb(221, 112, 112);
+}
+
+.fa-linkedin {
+  color: rgb(93, 93, 159);
+}
+
+.fa-twitter {
+  color: rgb(248, 242, 242);
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-github {
+  color: rgb(229, 216, 216);
+}
+
+.quick h4 {
+  font-size: 20px;
+  font-family: Arial;
+  text-shadow: 0px 0px 5px;
+}
+
+.quick-links {
+  width: 80px;
+}
+
+.quick-links a {
+  color: inherit;
+  text-decoration: none;
+  text-align: justify;
+  font-family: Arial;
+}
+
+.quick-links a:hover {
+  color: rgb(14, 84, 6);
+  transform: translateY(10px);
+  transition: 1s;
+}
+
+.patner a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-family: Arial;
+}
+
+.patner a:hover {
+  color: green;
+}
+
+.contact h1 {
+  font-family: Arial;
+  text-shadow: 0px 0px 5px;
+}
+
+.contact p {
+  color: rgb(224, 194, 194);
+
+  font-family: Arial;
+}
+
+#copy {
+  font-family: Arial;
+  font-size: 15px;
+}

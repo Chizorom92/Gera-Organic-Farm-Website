@@ -1,0 +1,676 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+}
+
+/* Navigation */
+
+header {
+  background-image: url(/MEDIA/istockphoto-1046450922-612x612.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.head-nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: green;
+}
+
+.head-nav img {
+  width: 5rem;
+  height: 5rem;
+  padding-left: 5px;
+}
+
+.navigate {
+  display: flex;
+  flex: end;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 165px;
+}
+
+.channel {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: white;
+}
+
+.channel a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: none;
+  box-shadow: 0px 5px 10px black;
+  padding: 8px;
+  border-radius: 1px 30px;
+  transition: all 1s;
+}
+
+a:hover {
+  transform: translateY(5px);
+  transition: 1s;
+}
+
+#train {
+  font-size: 100%;
+  font-family: cursive;
+  font-weight: 20%;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  box-shadow: 1px 1px 30px blue;
+}
+
+#train:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0px 0px 20px white;
+}
+
+/* Still on header style for class title */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: Bounce 1s ease-out both;
+}
+
+.title h1 {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: green;
+  text-shadow: 0px 0px 8px;
+}
+
+/* 
+@keyframes flipIn {
+
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    
+} */
+
+@keyframes Bounce {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title p {
+  font-size: 170%;
+  text-align: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+#p2 {
+  font-family: cursive;
+  box-shadow: 0px 0px 0px 5px black;
+  border: none;
+  color: green;
+  background: linear-gradient(250deg, rgb(16, 0, 0));
+}
+
+.title #spans {
+  font-family:;
+  width: 800px;
+  text-align: center;
+}
+
+#span1 {
+  color: white;
+}
+
+#firstaboutlink {
+  padding: 10px;
+  width: 200px;
+  font-size: 170%;
+  /* font-family: Impact, Haettenschweiler, Narrow Bold', sans-se-if; */
+  border: 2px solid white;
+  background-color: rgb(110, 68, 4, 0.1);
+  color: rgb(42, 33, 33);
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#firstaboutlink:hover {
+  /* background: linear-gradient(360deg, green); */
+  box-shadow: 0px 0px 50px;
+  color: white;
+}
+
+/* Styling main content */
+
+.about {
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* gap: 50px; */
+  background-color: rgb(248, 243, 236);
+}
+
+.about-section {
+  max-width: 800px;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.about-section h2 {
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.about-section p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(130, 92, 92);
+  line-break: auto;
+}
+
+.about-section h4 {
+  color: green;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#aboutlink {
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 0px 10px 10px rgb(64, 3, 3);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  /* display: flex; */
+  /* justify-items: center; */
+  margin: auto;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  /* transform: translateY(2px); */
+  transition: 0.5s;
+}
+
+#aboutlink:hover {
+  background-color: rgb(9, 89, 24);
+}
+
+#fish,
+#cock {
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px green;
+  width: 300px;
+}
+
+#fish:hover {
+  transform: translateX(-20px);
+  transition: 0.8s;
+}
+
+#cock:hover {
+  transform: translateX(-20px);
+  transition: 0.8s;
+}
+
+#what {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 0px 3px blue;
+}
+
+.main-about {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 750px;
+}
+
+.main-about h4 {
+  font-size: 200%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main-about p {
+  font-size: 120%;
+  text-align: justify;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-about #servicelink {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0px 0px 10px black;
+  background-color: rgb(16, 83, 16);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#servicelink:hover {
+  transform: translateY(-5px);
+  transition: ease-in-out 0.5s;
+  background-color: rgb(61, 108, 61);
+}
+
+.poultry,
+.fish,
+.bsf {
+  background-color: white;
+}
+
+.poultry {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(3, 47, 3);
+  text-align: center;
+  width: 500px;
+  /* height: 20px; */
+}
+
+.poultry img {
+  width: 500px;
+}
+
+.fish {
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(3, 47, 3);
+  text-align: center;
+  width: 500px;
+}
+
+.fish p {
+  margin-top: -50px;
+}
+
+.bsf {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(3, 47, 3);
+  text-align: center;
+  width: 500px;
+}
+
+.fish img {
+  width: 500px;
+  height: 350px;
+}
+.bsf img {
+  width: 500px;
+}
+
+.fish:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+.poultry:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+.bsf:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+/* Styling odf rating */
+
+section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  background-color: rgb(248, 252, 247);
+  border: none;
+  box-shadow: 0px 0px 10px;
+  padding: 15px;
+  border-radius: 10px;
+  /* text-align: center; */
+}
+
+section:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+}
+
+section h3 {
+  border: none;
+  box-shadow: 0px 0px 10px black;
+  width: 90px;
+  border-radius: 100px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: blue;
+  color: white;
+}
+
+section p {
+  font-size: 120%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* margin: auto; */
+  text-align: center;
+}
+
+article {
+  text-align: center;
+}
+
+article h2 {
+  text-shadow: 0px 0px 1.5px;
+  font-size: 200%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+article p {
+  font-size: 120%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling Testimonial */
+
+.testimonial {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px green;
+  border-radius: 20px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+blockquote {
+  font-size: 17px;
+  color: rgb(100, 97, 94);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  width: 400px;
+  text-align: justify;
+}
+
+.testimonial div {
+  margin-left: 50px;
+  box-shadow: 0px 0px 10px blue;
+  border: none;
+}
+.qoute p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.partner {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 40px;
+  gap: 50px;
+  padding-left: 40px;
+}
+
+.partner {
+  font-size: 180%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.partner a {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 0px 0px 10px red;
+}
+
+.partner a:hover {
+  background-color: black;
+}
+
+.newsletter {
+  justify-items: center;
+  background: linear-gradient(200deg, blue, white);
+  padding: 70px;
+  border: none;
+  border-radius: 2px;
+}
+
+.newsletter h2 {
+  font-size: 250%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsletter p {
+  font-size: 150%;
+  text-align: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  color: rgb(67, 54, 54);
+}
+
+#letter {
+  padding: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 5px white;
+  margin-left: 5px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#mail {
+  padding: 10px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
+  margin-right: 5px;
+  text-align: center;
+}
+
+#mail:hover {
+  box-shadow: 0px 0px 10px black;
+  border: none;
+  outline: none;
+}
+
+#letter:hover {
+  box-shadow: 0px 0px 10px black;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Styling for footer */
+
+footer {
+  background-color: rgb(11, 7, 47);
+  color: white;
+  padding: 40px;
+}
+
+.end-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 3%;
+  padding: 20px;
+}
+
+footer .about2 {
+  text-align: justify;
+}
+
+.about2 h4 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 0px 5px;
+}
+
+.about2 p {
+  color: rgb(224, 194, 194);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#copy {
+  text-align: center;
+}
+
+.social-links a {
+  font-size: 25px;
+  text-decoration: none;
+  /* color: white; */
+  opacity: 10;
+}
+
+.social-links i:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+}
+
+.fa-facebook-f {
+  color: rgb(5, 5, 243);
+}
+
+.fa-instagram {
+  color: rgb(221, 112, 112);
+}
+
+.fa-linkedin {
+  color: rgb(93, 93, 159);
+}
+
+.fa-twitter {
+  color: rgb(248, 242, 242);
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-github {
+  color: rgb(229, 216, 216);
+}
+
+.quick h4 {
+  font-size: 20px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 5px;
+}
+
+.quick-links {
+  width: 80px;
+}
+
+.quick-links a {
+  color: inherit;
+  text-decoration: none;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.quick-links a:hover {
+  color: rgb(14, 84, 6);
+  transform: translateY(10px);
+  transition: 1s;
+}
+
+.patner a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.patner a:hover {
+  color: green;
+}
+
+.contact h1 {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 5px;
+}
+
+.contact p {
+  color: rgb(224, 194, 194);
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#copy {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}

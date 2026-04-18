@@ -1,0 +1,567 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+}
+
+/* Navigation */
+
+header {
+  background-image: url(/MEDIA/istockphoto-1046450922-612x612.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.head-nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: green;
+}
+
+.head-nav img {
+  width: 5rem;
+  height: 5rem;
+  padding-left: 5px;
+}
+
+.navigate {
+  display: flex;
+  flex: end;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 165px;
+}
+
+.channel {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: white;
+}
+
+.channel a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: none;
+  box-shadow: 0px 5px 10px black;
+  padding: 8px;
+  border-radius: 1px 30px;
+  transition: all 1s;
+}
+
+a:hover {
+  transform: translateY(5px);
+  transition: 1s;
+}
+
+#train {
+  font-size: 100%;
+  font-family: cursive;
+  font-weight: 20%;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  box-shadow: 1px 1px 30px blue;
+}
+
+#train:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0px 0px 20px white;
+}
+
+/* Style for main Service */
+
+body {
+  /* background-color: rgb(243, 237, 237); */
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  animation: flipIn ease 2s;
+}
+
+@keyframes flipIn {
+  from {
+    transform: rotateX(190deg);
+  }
+
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes Bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+.service h1 {
+  position: absolute;
+  font-size: 60px;
+  font-family: cursive;
+  text-align: center;
+  margin: auto;
+  text-shadow: 0px 0px 3px;
+  margin-left: 30px;
+}
+
+.service p {
+  position: absolute;
+  top: 60%;
+  font-size: 20px;
+  font-family: cursive;
+  animation: Bounce 3s infinite;
+  animation-delay: 2s;
+}
+
+#banner {
+  /* width: 1000px; */
+  /* margin-top: 100px; */
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Geneva;
+  text-shadow: 0px 0px 2px;
+}
+
+.pfarm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+}
+
+.pfarm p {
+  width: 600px;
+  text-align: justify;
+  font-size: 150%;
+  font-family: "Lucida Sans";
+}
+
+#poultry {
+  border-radius: 20px;
+  box-shadow: 20px 10px 25px rgb(175, 164, 164);
+}
+
+#poultry:hover {
+  transform: translateY(-5px);
+  /* transition:  0.5s ease-in-out; */
+}
+
+/* style for offer */
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
+}
+
+.offer h3 {
+  font-size: 30px;
+  font-family: Georgia;
+  text-shadow: 0px 0px 3px;
+}
+
+.offer ul {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+#off:hover {
+  transform: translateX(10px);
+  transition: ease 0.5s;
+}
+
+video {
+  width: 500px;
+  border: none;
+  box-shadow: 0px 0px 10px green;
+  /* animation: flipIn 5s infinite; */
+  border-radius: 10px;
+}
+
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 10px solid; */
+  box-shadow: 0px 0px 10px green;
+  width: 800px;
+  margin: auto;
+  border-radius: 10px 1000px;
+  /* justify-items: center; */
+}
+
+.benefit h2 {
+  font-family: Trebuchet MS;
+  font-size: 40px;
+  color: rgb(83, 49, 49);
+  text-shadow: 0px 0px 3px;
+}
+
+.benefit ul {
+  font-size: 120%;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
+.benefit:hover {
+  transform: scale(0.95);
+  transition: 1s;
+}
+
+.fishimg {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
+  text-align: center;
+}
+
+.fishimg p {
+  font-size: 20px;
+  font-family: Franklin Gothic Medium;
+  text-shadow: 0px 0px 1.5px;
+}
+
+#catfish,
+#tilapia,
+#tigerfish,
+#croakfish {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+}
+
+.fishimg aside:hover {
+  transform: translateY(-10px);
+  transition: 0.8s;
+  box-shadow: 0px 0px 10px green;
+  border-radius: 10px;
+}
+.fishimg aside {
+  box-shadow: 0px 0px 2px;
+  border: none;
+  border-radius: 10px;
+}
+
+.fishservice {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+  text-align: center;
+}
+
+#fing,
+#bigfish,
+#feed,
+#pondf {
+  width: 400px;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 20px 10px 25px rgb(179, 197, 179);
+}
+
+.fishservice p {
+  font-size: 20px;
+  font-family: Franklin Gothic Medium;
+}
+
+.fishservice div:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+}
+
+.fishbenf {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+.fishbenf li {
+  margin-bottom: 10px;
+  list-style: square;
+}
+
+.benefit2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 10px solid; */
+  box-shadow: 0px 0px 10px green;
+  width: 800px;
+  margin: auto;
+  border-radius: 300px 30px 300px;
+  /* justify-items: center; */
+}
+
+.benefit2 h2 {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 40px;
+  color: rgb(83, 49, 49);
+  text-shadow: 0px 0px 3px;
+}
+
+.benefit2:hover {
+  transform: scale(0.95);
+  transition: 1s;
+}
+
+.consult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+}
+
+.consult div {
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  box-shadow: 20px 20px 25px rgb(210, 207, 207);
+}
+
+.consult p {
+  font-size: 22px;
+  font-family: cursive;
+  text-align: center;
+}
+
+.consult li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.consult a {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  color: blue;
+  box-shadow: 0px 0px 10px blue;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+}
+
+.consult a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.consult div:hover,
+.suppply div:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  /* box-shadow: 0px 0px 10px; */
+  transition: all 0.3s;
+  border-radius: 30px;
+  width: 300px;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px;
+}
+
+.feature-icon {
+  width: 100%;
+  height: 280px;
+  background: #1e0303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: #999;
+}
+
+.feature h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for footer */
+
+footer {
+  background-color: rgb(11, 7, 47);
+  color: white;
+}
+
+.end-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 5%;
+  padding: 20px;
+}
+
+footer .about {
+  text-align: justify;
+}
+
+.about h4 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 0px 5px;
+}
+
+.about p {
+  color: rgb(224, 194, 194);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#copy {
+  text-align: center;
+}
+
+.social-links a {
+  font-size: 25px;
+  text-decoration: none;
+  /* color: white; */
+  opacity: 10;
+}
+
+.social-links i:hover {
+  transform: translateY(-10px);
+  transition: 1s;
+}
+
+.fa-facebook-f {
+  color: rgb(5, 5, 243);
+}
+
+.fa-instagram {
+  color: rgb(221, 112, 112);
+}
+
+.fa-linkedin {
+  color: rgb(93, 93, 159);
+}
+
+.fa-twitter {
+  color: rgb(248, 242, 242);
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-github {
+  color: rgb(229, 216, 216);
+}
+
+.quick h4 {
+  font-size: 20px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 5px;
+}
+
+.quick-links {
+  width: 80px;
+}
+
+.quick-links a {
+  color: inherit;
+  text-decoration: none;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.quick-links a:hover {
+  color: rgb(14, 84, 6);
+  transform: translateY(10px);
+  transition: 1s;
+}
+
+.patner a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.patner a:hover {
+  color: green;
+}
+
+.contact h1 {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 5px;
+}
+
+.contact p {
+  color: rgb(224, 194, 194);
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#copy {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
