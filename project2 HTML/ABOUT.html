@@ -14,10 +14,13 @@
     <div class="head-nav">
         <img src="../MEDIA/file_00000000da34620e918df30145b259b1.png" alt="Gera logo" >
 
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open navigation">
+            <i class="fa fa-bars"></i>
+        </button>
 
         <nav class="navigate">
             <div class="channel">
-                <a href="HOME.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="ABOUT.html">About</a>
                 <a href="SERVICE.html">Service</a>
                 <a href="CONTACT.html">Contact Us</a>
@@ -31,6 +34,42 @@
         </nav>
 
        </div>
+
+           <!-- Sidebar for mobile -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" id="closeSidebar" aria-label="Close navigation">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="SERVICE.html">Service</a>
+        <a href="CONTACT.html">Contact Us</a>
+        <form action="TRAIN.HTML">
+            <input type="submit" value="Click To Join Training " id="train" style="width:90%;margin:10px auto;">
+        </form>
+    </div>
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <script>
+    // Sidebar toggle logic
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const closeSidebar = document.getElementById('closeSidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    function openSidebar() {
+        sidebar.classList.add('open');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeSidebarFunc() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    sidebarToggle.addEventListener('click', openSidebar);
+    closeSidebar.addEventListener('click', closeSidebarFunc);
+    sidebarOverlay.addEventListener('click', closeSidebarFunc);
+    </script>
+ 
 
 <main>
 

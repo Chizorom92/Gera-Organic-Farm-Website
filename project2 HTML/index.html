@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GERA ORGANIC FARM &#128509</title>
-    <link rel="stylesheet" href="../project 2 CSS/home.css">
+    <link rel="stylesheet" href="../project 2 CSS/style.css">
     
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> -->
 
@@ -19,25 +19,56 @@
 
     <div class="head-nav">
         <img src="../MEDIA/file_00000000da34620e918df30145b259b1.png" alt="Gera logo" >
-
-
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open navigation">
+            <i class="fa fa-bars"></i>
+        </button>
         <nav class="navigate">
             <div class="channel">
-                <a href="HOME.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="ABOUT.html">About</a>
                 <a href="SERVICE.html">Service</a>
                 <a href="CONTACT.html">Contact Us</a>
             </div>
-
-
-            
-             <form action="TRAIN.HTML">
-                  <input type="submit" value="Click To Join Training " id="train">
-             </form>
-
+            <form action="TRAIN.HTML">
+                <input type="submit" value="Click To Join Training " id="train">
+            </form>
         </nav>
+    </div>
 
-       </div>
+    <!-- Sidebar for mobile -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" id="closeSidebar" aria-label="Close navigation">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="SERVICE.html">Service</a>
+        <a href="CONTACT.html">Contact Us</a>
+        <form action="TRAIN.HTML">
+            <input type="submit" value="Click To Join Training " id="train" style="width:90%;margin:10px auto;">
+        </form>
+    </div>
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <script>
+    // Sidebar toggle logic
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const closeSidebar = document.getElementById('closeSidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    function openSidebar() {
+        sidebar.classList.add('open');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeSidebarFunc() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    sidebarToggle.addEventListener('click', openSidebar);
+    closeSidebar.addEventListener('click', closeSidebarFunc);
+    sidebarOverlay.addEventListener('click', closeSidebarFunc);
+    </script>
  
     <header>
        
@@ -58,9 +89,9 @@
                     <span>TRUSTED</span>
                 </div>
                 <br> 
-                <form action="ABOUT.html">
+                <!-- <form action="ABOUT.html">
                   <input type="submit" value="Learn More" id="firstaboutlink">
-             </form>
+             </form> -->
 
          </menu>
 
@@ -97,11 +128,11 @@
         </div>
     </aside>
 
-            <h3 id="what">WHAT WE DO!</h3>
+            <!-- <h3 id="what">WHAT WE DO!</h3>
 
-    <main class="main-about">
+    <main class="main-about"> -->
 
-
+<!-- 
         <div class="poultry">
                 
                 <img src="../MEDIA/istockphoto-863142300-612x612 (1).jpg" alt="poutry photo">
@@ -161,13 +192,13 @@
         
         
              
-        </div>
+        </div> -->
 
 
-    </main>
-<br> 
+    <!-- </main> -->
+<
  <!-- style="display: flex; gap: 25px; text-align: center;"> -->
-    <section class="rating">
+    <!-- <section class="rating">
         <div>
             <h3>300%</h3>
 
@@ -193,7 +224,7 @@
         </div>
 
 
-    </section>
+    </section> -->
 
     <br> <br>
 
@@ -205,7 +236,7 @@
     </article>
 
 
-        <div class="testimonial">
+        <!-- <div class="testimonial">
                 <aside>
                    
                    <div style=" width: 90px; border-radius: 100px; height: 90px; 
@@ -333,7 +364,7 @@
                 
             </aside>
 
-        </div> 
+        </div>  -->
 
 
         <div class="partner">

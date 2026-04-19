@@ -554,3 +554,247 @@ footer .about {
   font-family: Arial;
   font-size: 15px;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  main,
+  .organic-farm,
+  .organic-pond,
+  .organic-bsf,
+  #pose,
+  .result,
+  .benefit,
+  .bsfimage,
+  .bsfsite {
+    width: 90% !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .navigate {
+    gap: 60px;
+  }
+  .pfarm,
+  .bsfimage,
+  .bsfsite {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  main div,
+  .pfarm p,
+  .about-section,
+  .result,
+  .benefit,
+  .organic div {
+    width: 100% !important;
+  }
+  .organic-bsf ol,
+  .organic-pond ol {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  .head-nav,
+  .navigate,
+  .channel,
+  .end-nav,
+  .about,
+  .about-section,
+  .organic div,
+  .benefit,
+  .bsfimage,
+  .bsfsite,
+  .result,
+  .organic-farm,
+  .organic-pond,
+  .organic-bsf,
+  #pose {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    padding: 10px !important;
+    margin: 0 !important;
+  }
+  .head-nav img,
+  main img,
+  .bsfimage img,
+  #img2,
+  #bsfimg2,
+  #siteimg1,
+  #siteimg2 {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px !important;
+  }
+  .navigate {
+    gap: 20px !important;
+    flex-direction: column !important;
+  }
+  .channel {
+    gap: 10px !important;
+    flex-direction: column !important;
+  }
+  .organic-farm,
+  .organic-pond,
+  .organic-bsf,
+  #pose,
+  .result,
+  .benefit {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 100% !important;
+  }
+  .about-section h2,
+  .benefit h2,
+  .how-bsf h2,
+  div h1 {
+    font-size: 1.5rem !important;
+  }
+  .about-section p,
+  .benefit ul,
+  .result li,
+  .organic p,
+  .organic li,
+  .organic-farm p,
+  .organic-pond p,
+  .organic-bsf ul li {
+    font-size: 1rem !important;
+  }
+
+  
+.organic-pond:hover {
+  transform: none  !important;
+  transition: 1s;
+}
+
+
+.organic-farm:hover {
+  transform: none !important;
+  transition: 1s;
+}
+
+#bsfimg:hover {
+  transform: translateX(4%);
+  transition: ease-in-out 2s;
+}
+
+
+#img2:hover {
+  transform: none;
+  transition: ease-in-out 0.5s;
+}
+
+#img1:hover {
+  transform: none;
+  transition: ease-in-out 0.5s;
+}
+
+.benefit:hover {
+  transform: none;
+  transition: 2s;
+}
+
+#siteimg1:hover {
+  transform: none;
+  transition: 1s;
+}
+
+#siteimg2:hover {
+  transform: none;
+  transition: 1s;
+}
+
+
+#bsfimg:hover {
+  transform: none;
+  transition: ease-in-out 2s;
+}
+
+.head-nav img {
+  width: 10px;
+  height: 5rem;
+  padding-left: 5px;
+}
+}
+
+ /* Hide top nav, show sidebar toggle */
+  .navigate, .channel {
+    display: none !important;
+  }
+  .sidebar-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    z-index: 1002;
+    cursor: pointer;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    max-width: 320px;
+    height: 100vh;
+    background: #1a4d1a;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    padding: 40px 20px 20px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1003;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #2e7d32;
+    font-family: Arial, sans-serif;
+  }
+  .sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 1002;
+  }
+  .sidebar-overlay.active {
+    display: block;
+  }
+
+  
+
+
+@media (min-width: 601px) {
+  .sidebar, .sidebar-toggle, .sidebar-overlay {
+    display: none !important;
+  }
+  .navigate, .channel {
+    display: flex !important;
+  }
+}
