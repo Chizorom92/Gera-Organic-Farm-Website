@@ -152,7 +152,7 @@ a:hover {
 }
 
 .title #spans {
-  font-family:;
+  
   width: 800px;
   text-align: center;
 }
@@ -278,9 +278,7 @@ a:hover {
     display: block !important;
   }
 
-  .testimonial{
-    
-  }
+
   .testimonial aside {
     flex-direction: column !important;
     align-items: center !important;

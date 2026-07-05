@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERA ORGANIC FARM &#128509</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> -->
+
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+
+
+<body>
+
+    <div class="head-nav">
+        <img src="/MEDIA/file_00000000da34620e918df30145b259b1.png" alt="Gera logo" >
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="navigate">
+            <div class="channel">
+                <a href="index.html">Home</a>
+                <a href="ABOUT.html">About</a>
+                <a href="SERVICE.html">Service</a>
+                <a href="CONTACT.html">Contact Us</a>
+            </div>
+            <form action="TRAIN.HTML">
+                <input type="submit" value="Click To Join Training " id="train">
+            </form>
+        </nav>
+    </div>
+    
+
+    <!-- Sidebar for mobile -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" id="closeSidebar" aria-label="Close navigation">&times;</button>
+        <a href="index.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="SERVICE.html">Service</a>
+        <a href="CONTACT.html">Contact Us</a>
+        <form action="TRAIN.HTML">
+            <input type="submit" value="Click To Join Training " id="train" style="width:90%;margin:10px auto;">
+        </form>
+    </div>
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+    
+
+    <script>
+    // Sidebar toggle logic
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const closeSidebar = document.getElementById('closeSidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    function openSidebar() {
+        sidebar.classList.add('open');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeSidebarFunc() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    sidebarToggle.addEventListener('click', openSidebar);
+    closeSidebar.addEventListener('click', closeSidebarFunc);
+    sidebarOverlay.addEventListener('click', closeSidebarFunc);
+    </script>
+
+    <header>
+       
+
+        <menu class="title">
+            <br><br><br><br><br><br><br>
+            <h1>GERA ORGANIC FARM</h1>
+            
+            <P>Your source for premium poultry and fish, naturally raised and farm-freshed
+                everyday.</P>
+
+                <p id="p2">Buy healthy. <span id="span1"> Eat fresh. </span> Live better.</p>
+
+                <div id="spans">
+                    <span>FRESH</span>
+                    <span>ORGANIC</span>
+                    <span>&</span>
+                    <span>TRUSTED</span>
+                </div>
+                <br> 
+                <!-- <form action="ABOUT.html">
+                  <input type="submit" value="Learn More" id="firstaboutlink">
+             </form> -->
+
+         </menu>
+
+
+    </header>
+
+
+  
+
+    <aside class="about">
+        <div class="about-section">
+            <h2>ABOUT US</h2>
+            <P>At <strong>GERA Organic Farm</strong>, we are dedicated to rising healthy 
+                birds and fish through sustainable and eco-friendly farming practices.
+            Our goal is to provide fresh, nutritions and organically grown poultry and
+            fish products that promote wellness and support local communities.</P>
+
+            <p>Whether you're a here to learn, buy or partner with us, we're glad to have you!
+                Explore our farm, discover our methods and see how we're tranforming agriculture. 
+                One healthy harvest at a time.
+            </p>
+
+            <h4>Fresh. Organic. & Trusted. That's GERA!</h4>
+
+             <form action="ABOUT.html">
+                  <input type="submit" value="Learn More" id="aboutlink">
+             </form>
+
+        </div> <br><br> <br> <br>
+
+        <div  class="home-img">
+            <img src="/MEDIA/image20240725125740.png" alt="Image of an Adult Catfish" id="fish"> <br> <br>
+            <img src="/MEDIA/istockphoto-172476350-612x612.jpg" alt="image of a Cock" id="cock">
+        </div>
+    </aside>
+
+           
+
+    <br> <br>
+
+    <article>
+        <h2>WE TRUST GERA</h2>
+         <p>Our work speaks for itself and so do our customers. Here's what 
+            they're saying about our poultry and fish services. </p>
+
+    </article>
+
+
+       
+
+
+        <div class="partner">
+            <h3>Partner with us for Organic Food Supply</h3>
+
+            <a href="#">Become a Partner</a>
+
+            
+        </div>
+        
+
+
+
+
+        <div class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+
+            <p>Get exclusive deals, latest harvest and special offers delivered 
+                to your inbox </p>
+
+                                    
+                    <form action="#">
+                        <input type="email" id="mail" placeholder="Input Email" required>
+                        <input type="submit" value="Subscribe" id="letter">
+                    </form>  
+            
+        </div>
+
+
+
+        <footer>
+            <div class="end-nav">
+                <div class="about2">
+                    
+                    <h4>About Gera Organic Farm</h4>
+
+                    <p>Your source for premium poultry and fish, naturally raised and farm-freshed
+                            everyday.</p>
+
+                            <br>
+
+                    <div class="social-links">
+                        
+                        <a href="https://www.facebook.com" > <i class="fa-brands fa-facebook-f"></i>   </a>
+                        <a href="https://www.instagram.com" ><i class="fa-brands fa-instagram"></i>  </a>
+                        <a href="https://x.com/Benjaminmbabie"> <i class="fa-brands fa-twitter"></i> </a>
+                        
+                        <a href="https://linkedin.com">  <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://github.com"> <i class="fa-brands fa-github"></i> </a> 
+
+                    </div>
+
+ 
+        
+       
+       
+       
+
+                </div>
+
+
+                <div class="quick">
+                    
+                    <h4>Quick Links</h4>
+
+                    <div class="quick-links">
+                        <a href="ABOUT.html">About US</a> <br>
+                        <a href="CONTACT.html">Contact US</a> <br>
+                        <a href="TRAIN.HTML">Join Training</a> <br>
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="patner">
+                    <div> <a href="#">Become a Partner</a> </div>
+                </div>
+
+
+                <div class="contact">
+                    <h1>Contact Info</h1>
+                    <p>114 Adetola Street, Aguda Surulere, Lagos, Nigeria</p>
+                    <strong>Email:</strong> <a href="mailto:bmuarice367@gmail.com">
+                        bmaurice367@gmail.com</a>
+                                    <br> <br>
+                    <strong>Phone: +234-913-786-4988</strong>    
+                </div>
+
+                
+
+            </div>
+
+            <hr>
+                <div id="copy">
+                    &copy; 2025 Gera Organic Farm. All Right Reserved
+                </div>
+
+
+
+        
+
+
+
+        </footer>
+
+    
+</body>
+
+
+
+</html>
