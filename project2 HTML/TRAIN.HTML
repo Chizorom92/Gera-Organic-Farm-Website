@@ -6,6 +6,32 @@
     <title>Join Training</title>
     <link rel="stylesheet" href= "/project 2 CSS/train.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .scroll-top-btn {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            width: 46px;
+            height: 46px;
+            border: none;
+            border-radius: 50%;
+            background: #1a4d1a;
+            color: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            z-index: 2000;
+            cursor: pointer;
+        }
+        .scroll-top-btn:hover {
+            background: #2e7d32;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 600px) {
+            .scroll-top-btn { display: flex; }
+        }
+    </style>
 </head>
 
 
@@ -166,9 +192,7 @@
 
                     <br> <br>
 
-        <div style="display: flex; display: flex; justify-content: center;
-        align-items: center; margin: auto;  gap: 20px; margin-top: 5vh;
-        padding: 20px;">
+        <div class="bonus-section">
 
             <section class="bonus">
                 <h2>Bonuses</h2>
@@ -309,5 +333,24 @@
 
 
         </footer>
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        function toggleScrollTopBtn() {
+            if (window.innerWidth <= 600) {
+                scrollTopBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        }
+        if (scrollTopBtn) {
+            scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+            window.addEventListener('scroll', toggleScrollTopBtn);
+            window.addEventListener('resize', toggleScrollTopBtn);
+            toggleScrollTopBtn();
+        }
+    </script>
 </body>
 </html>

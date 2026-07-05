@@ -9,25 +9,61 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <style>
+      .scroll-top-btn {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        width: 46px;
+        height: 46px;
+        border: none;
+        border-radius: 50%;
+        background: #1a4d1a;
+        color: white;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        z-index: 2000;
+        cursor: pointer;
+      }
+      .scroll-top-btn:hover {
+        background: #2e7d32;
+        transform: translateY(-2px);
+      }
+      @media (max-width: 600px) {
+        .scroll-top-btn {
+          display: flex;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="head-n" style="background-color: green;">
-        <img src="/MEDIA/file_00000000da34620e918df30145b259b1.png" alt="Gera logo" style="width: 80px; margin-left: 40%; padding: 10px;" >
-        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <nav class="navigate">
-            <div class="channel">
-                <a href="/index.html">Home</a>
-                <a href="ABOUT.html">About</a>
-                <a href="SERVICE.html">Service</a>
-                <a href="CONTACT.html">Contact Us</a>
-            </div>
-            <form action="TRAIN.HTML">
-                <input type="submit" value="Click To Join Training " id="train">
-            </form>
-        </nav>
+    <div class="head-n" style="background-color: green">
+      <img
+        src="/MEDIA/file_00000000da34620e918df30145b259b1.png"
+        alt="Gera logo"
+        style="width: 80px; margin-left: 40%; padding: 10px"
+      />
+      <button
+        class="sidebar-toggle"
+        id="sidebarToggle"
+        aria-label="Open navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav class="navigate">
+        <div class="channel">
+          <a href="/index.html">Home</a>
+          <a href="ABOUT.html">About</a>
+          <a href="SERVICE.html">Service</a>
+          <a href="CONTACT.html">Contact Us</a>
+        </div>
+        <form action="TRAIN.HTML">
+          <input type="submit" value="Click To Join Training " id="train" />
+        </form>
+      </nav>
     </div>
 
     <!-- Sidebar for mobile -->
@@ -771,5 +807,26 @@
       <hr />
       <div id="copy">&copy; 2025 Gera Organic Farm. All Right Reserved</div>
     </footer>
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <script>
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      function toggleScrollTopBtn() {
+        if (window.innerWidth <= 600) {
+          scrollTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      }
+      if (scrollTopBtn) {
+        scrollTopBtn.addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: "smooth" }),
+        );
+        window.addEventListener("scroll", toggleScrollTopBtn);
+        window.addEventListener("resize", toggleScrollTopBtn);
+        toggleScrollTopBtn();
+      }
+    </script>
   </body>
 </html>
