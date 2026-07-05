@@ -81,10 +81,6 @@ a:hover {
 
 /* Style for main Service */
 
-body {
-  /* background-color: rgb(243, 237, 237); */
-}
-
 .service {
   display: flex;
   flex-direction: column;
@@ -141,11 +137,6 @@ body {
   animation-delay: 2s;
 }
 
-#banner {
-  /* width: 1000px; */
-  /* margin-top: 100px; */
-}
-
 h2 {
   text-align: center;
   font-size: 30px;
@@ -188,158 +179,180 @@ h2 {
   .pfarm,
   .offer,
   .benefit,
-  .bsfimage {
+  .consult,
+  .feature,
+  .fishservice,
+  .fishimg {
     flex-direction: column !important;
     gap: 20px !important;
     align-items: center !important;
   }
-  .pfarm {
+
+  .pfarm,
+  .offer,
+  .consult,
+  .feature,
+  .fishservice {
     gap: 20px !important;
   }
+
   .service,
   .pfarm p,
   .benefit,
+  .benefit2,
   .offer,
-  .bsfimage {
+  .consult,
+  .feature,
+  .fishservice,
+  .fishimg {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .pfarm,
+  .offer,
+  .consult,
+  .feature,
+  .fishservice {
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
+  }
+
+  .benefit,
+  .benefit2 {
+    width: min(95%, 800px) !important;
+    border-radius: 16px !important;
+  }
+
+  .fishimg {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
 @media (max-width: 600px) {
-  header,
-  .head-nav,
-  .navigate,
-  .channel,
-  .end-nav,
-  .service,
-  .pfarm,
-  .offer,
-  .benefit,
-  .bsfimage {
-    flex-direction: column !important;
+  body {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .head-nav {
+    padding: 10px 5px !important;
     width: 100% !important;
-    gap: 10px !important;
-    padding: 10px !important;
-    margin: 0 !important;
-    align-items: center !important;
+    justify-content: space-between !important;
   }
-  /* .head-nav img, */
-  .bsfimage img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 300px !important;
-  }
-  .navigate {
-    gap: 10px !important;
-  }
-  .channel {
-    gap: 5px !important;
-  }
-  .service h1,
-  .benefit h2,
-  .offer h3,
-  h2 {
-    font-size: 1.2rem !important;
-  }
-  .pfarm p,
-  .benefit ul,
-  .offer ul {
-    font-size: 1rem !important;
+
+  .head-nav img {
+    width: 55px !important;
+    height: 55px !important;
   }
 
   .service {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  animation: none;
-  width: 4%;
-}
-
-@keyframes flipIn {
-  from {
-    transform: none;
+    min-height: 220px;
+    padding: 0 10px;
+    width: 100%;
+    overflow: hidden;
   }
 
-  to {
-    transform: rotateX(0);
-  }
-}
-
-@keyframes Bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
+  .service h1 {
+    font-size: 1.5rem !important;
+    position: static !important;
+    margin: 0 0 10px;
   }
 
-  40% {
-    transform: translateY(-5px);
+  .service p {
+    position: static !important;
+    font-size: 1rem !important;
+    margin: 0;
+    text-align: center;
+    animation: none;
   }
-  60% {
-    transform: translateY(-8px);
+
+  #banner {
+    width: 100%;
+    height: auto;
+    display: block;
   }
-}
 
-#poultry{
-  width: 100%;
-}
+  .pfarm p,
+  .offer ul,
+  .benefit ul,
+  .fishbenf,
+  .consult p,
+  .consult li {
+    font-size: 1rem !important;
+    width: 100% !important;
+    padding: 0 10px;
+  }
 
+  #poultry,
+  #catfish,
+  #tilapia,
+  #tigerfish,
+  #croakfish,
+  #fing,
+  #bigfish,
+  #feed,
+  #pondf {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
 
-video {
-  display: none;
-  width: 100px;
-  border: none;
-  box-shadow: 0px 0px 10px green;
-  /* animation: flipIn 5s infinite; */
-  border-radius: 10px;
-}
+  .benefit,
+  .benefit2 {
+    width: 95% !important;
+    padding: 15px;
+    border-radius: 16px;
+  }
 
-.benefit{
-  border-radius: 10px 10px;
-}
+  .fishimg {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
 
-.fishimg {
-  display: none;
-  grid-template-columns: auto ;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  /* gap: 30px; */
-  text-align: center;
-}
+  .fishservice {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
 
-.fishimg p {
-  font-size: 20px;
-  font-family: Franklin Gothic Medium;
-  text-shadow: 0px 0px 1.5px;
-}
+  .consult {
+    flex-direction: column !important;
+    gap: 15px;
+  }
 
-#catfish,
-#tilapia,
-#tigerfish,
-#croakfish {
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-  border: none;
-}
+  .consult div,
+  .feature-card {
+    width: 95% !important;
+    margin: 0 auto;
+  }
 
-.fishimg aside:hover {
-  transform: translateY(-10px);
-  transition: 0.8s;
-  box-shadow: 0px 0px 10px green;
-  border-radius: 10px;
-}
-}
+  .feature {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
 
- /* Hide top nav, show sidebar toggle */
-  .navigate, .channel {
+  .end-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 15px;
+  }
+
+  .quick-links {
+    width: auto;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navigate,
+  .channel {
     display: none !important;
   }
+
   .sidebar-toggle {
     display: block;
     background: none;
@@ -352,6 +365,7 @@ video {
     z-index: 1002;
     cursor: pointer;
   }
+
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -362,15 +376,17 @@ video {
     max-width: 320px;
     height: 100vh;
     background: #1a4d1a;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
     padding: 40px 20px 20px 20px;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 1003;
   }
+
   .sidebar.open {
     transform: translateX(0);
   }
+
   .sidebar a {
     color: #fff;
     text-decoration: none;
@@ -380,6 +396,7 @@ video {
     border-bottom: 1px solid #2e7d32;
     font-family: Arial, sans-serif;
   }
+
   .sidebar .close-btn {
     position: absolute;
     top: 10px;
@@ -390,6 +407,7 @@ video {
     font-size: 2rem;
     cursor: pointer;
   }
+
   .sidebar-overlay {
     display: none;
     position: fixed;
@@ -397,19 +415,23 @@ video {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1002;
   }
+
   .sidebar-overlay.active {
     display: block;
   }
-
+}
 
 @media (min-width: 601px) {
-  .sidebar, .sidebar-toggle, .sidebar-overlay {
+  .sidebar,
+  .sidebar-toggle,
+  .sidebar-overlay {
     display: none !important;
   }
-  .navigate, .channel {
+  .navigate,
+  .channel {
     display: flex !important;
   }
 }
